@@ -30,7 +30,5 @@ stred <- st_point(c(15, 50)) |>
 sf_as_ee(
   stred,
   via = "getInfo_to_asset", # vrstva se nenahraje, pokud necháme možnost "getInfo" (ta jen konvertuje do dočasného objektu)
-  assetId = "projects/ee-ledvinka/assets/astronomicky_stred_evropy" # je nutné znát cestu ke složce s assety
+  assetId = "projects/ee-ledvinka/assets/astronomicky_stred_evropy" # je nutné znát cestu ke složce s assety a na konec dodat název naší nové vrstvy
 )
-
-# v současné verzi rgee je možné se setkat s chybou, ale vrstva se nahraje, o čemž je možné se snadno přesvědčit
