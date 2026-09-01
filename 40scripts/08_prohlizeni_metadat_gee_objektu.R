@@ -25,7 +25,12 @@ ee_print(img)
 
 # pořád ale neznáme např. názvy sloupců vektorové vrstvy
 # jak tedy na ně?
+<<<<<<< HEAD
 vlastnosti <-
   stred$first()$propertyNames()$getInfo()
+=======
+>>>>>>> fa0c1a32beb37a8aed50483d97b561daddf8782d
 
-vlastnosti
+stred$first()$propertyNames()$getInfo()
+
+# strategicky vybíráme první (zde jediný řádek), abychom dostali názvy sloupců # tímto dostaneme vektor s názvy sloupců do prostředí R
