@@ -25,6 +25,7 @@ ee_print(img)
 
 # pořád ale neznáme např. názvy sloupců vektorové vrstvy
 # jak tedy na ně?
-vlastnosti <- stred$propertyNames()$getInfo()
+vlastnosti <-
+  stred$first()$propertyNames()$getInfo()
 
 vlastnosti
