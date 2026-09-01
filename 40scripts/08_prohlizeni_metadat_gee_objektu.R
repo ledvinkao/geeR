@@ -30,4 +30,5 @@ vlastnosti <-
 
 vlastnosti
 
-# strategicky vybíráme první (zde jediný řádek), abychom dostali názvy sloupců # tímto dostaneme vektor s názvy sloupců do prostředí R
+# strategicky vybíráme první (zde jediný řádek), abychom dostali názvy sloupců
+# tímto dostaneme vektor s názvy sloupců do prostředí R
