@@ -34,6 +34,7 @@ slozenka <- prazdny$paint(
 
 # centrujeme na zájmovou oblast
 # centrovat lze na objekt s geometrií (např. jeden z polygonů) nebo na souřadnice
+# proto se zde centruje jen na jeden z polygonů
 Map$centerObject(cesko, 10)
 
 # a konečne vizualizujeme v dynamické mapě

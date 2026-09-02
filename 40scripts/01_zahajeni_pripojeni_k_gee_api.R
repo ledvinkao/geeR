@@ -14,4 +14,4 @@ ee_Initialize(
 )
 
 # alternativou k drive = T je gcs = T (aktivuje se tím Google Cloud Storage, pokud jsme si ho zařídili)
-# po prvních spuštěních těchto řádků, bude Google požadovat autentikaci (např. vložit do Konzole token a dále něco povolit)
+# po prvních spuštěních těchto řádků bude Google požadovat autentikaci (např. vložit do Konzole token a dále něco povolit)
