@@ -9,7 +9,7 @@ xfun::pkg_attach("rgee")
 # zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")
 
-# využijeme např. administraivní členení zemí nabízené FAO
+# využijeme např. administrativní členení zemí nabízené FAO
 adm <- ee$FeatureCollection("FAO/GAUL/2015/level1")
 
 # zaměříme se na Česko
