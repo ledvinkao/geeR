@@ -6,7 +6,7 @@
 # načteme balíček rgee
 xfun::pkg_attach("rgee")
 
-# inicializujeme připojení
+# zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")
 
 # využijeme např. administraivní členení zemí nabízené FAO
@@ -33,6 +33,7 @@ slozenka <- empty$paint(
 )
 
 # centrujeme na zájmovou oblast
+# centrovat lze na objekt s geometrií (např. jeden z polygonů) nebo na souřadnice
 Map$centerObject(cesko, 10)
 
 # a konečne vizualizujeme v dynamické mapě

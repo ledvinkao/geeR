@@ -26,5 +26,5 @@ col$size()$getInfo()
 
 col_zari$size()$getInfo()
 
-# počet snímků opravdu klesl, ale neodpovídá počtu dnů v měsící
+# počet snímků opravdu klesl, ale neodpovídá počtu dnů v měsíci
 # důvodem je fakt, že funkce size() vrací počet dlaždic, a to navíc pro celý svět
