@@ -23,10 +23,10 @@ cesko <- adm$filter(
 )
 
 # nejprve prázdný snímek jako plátno
-empty <- ee$Image()$byte()
+prazdny <- ee$Image()$byte()
 
 # na něj pak nakreslíme vektorovou vrstvu (zde vybrané polygony)
-slozenka <- empty$paint(
+slozenka <- prazdny$paint(
   featureCollection = cesko,
   color = 1,
   width = 1
