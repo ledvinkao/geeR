@@ -3,7 +3,7 @@
 # načteme balíček rgee
 xfun::pkg_attach2("rgee")
 
-# inicializujeme připojení
+# zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")
 
 # na GEE se kromě snímků a jejich kolekcí vyskytují také vektorové vrstvy

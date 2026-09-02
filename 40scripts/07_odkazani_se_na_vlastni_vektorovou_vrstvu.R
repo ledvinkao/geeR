@@ -6,7 +6,7 @@
 # načteme balíček rgee
 xfun::pkg_attach2("rgee")
 
-# inicializujeme připojení
+# zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")
 
 # a odkážeme se na vrstvu za znalosti odkazu ze skriptu 06

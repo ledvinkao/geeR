@@ -12,7 +12,7 @@ xfun::pkg_attach2(
   "rgee"
 )
 
-# inicializujeme připojení
+# zahájíme připojení
 ee_Initialize(
   user = "ledvinka@natur.cuni.cz",
   gcs = T # bohužel iniciace procesu přes Google Cloud Storage (gcs) je nutností pro fungování, což nemusí jít pod každým účtem, nemá-li ověřenou kreditní nebo debetní kartu

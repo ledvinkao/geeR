@@ -7,7 +7,7 @@
 # načteme nejpodstatnější balíček rgee
 xfun::pkg_attach2("rgee") # pro tento způsob načítání R balíčků je nutné mít nainstalovaný balíček xfun
 
-# nyní lze inicializovat připojení
+# nyní lze zahájit připojení
 ee_Initialize(
   user = "ledvinka@natur.cuni.cz", # každý má svůj uživatelský účet spjatý s profilem na Google
   drive = T # pro práci s malými daty a výstupy není nutné inicializovat připojení ke Google Drive

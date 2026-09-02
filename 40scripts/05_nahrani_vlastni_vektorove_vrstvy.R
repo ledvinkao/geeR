@@ -13,7 +13,7 @@ xfun::pkg_attach2(
   "rgee"
 )
 
-# inicializujeme připojení
+# zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")
 
 # vytvořme nejprve lokálně bod reprezentující např. astronomický střed Evropy
