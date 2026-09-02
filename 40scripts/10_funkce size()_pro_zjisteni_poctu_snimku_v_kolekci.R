@@ -24,6 +24,7 @@ col_zari <-
 # tohle může trvat trochu déle
 col$size()$getInfo()
 
+# tohle už je mnohem rychlejší
 col_zari$size()$getInfo()
 
 # počet snímků opravdu klesl, ale neodpovídá počtu dnů v měsíci
