@@ -16,7 +16,7 @@ adm <- ee$FeatureCollection("FAO/GAUL/2015/level1")
 # ale nejdříve musíme vědět, na základě jaké vlastnosti se můžeme omezovat na vybrané administrativní jednotky
 adm$first()$propertyNames()$getInfo()
 
-# je zde vhodný soupec 'ADM0_NAME'
+# je zde vhodný sloupec 'ADM0_NAME'
 # aplikujeme funkci s nápomocným filtrem
 cesko <- adm$filter(
   ee$Filter$eq('ADM0_NAME', 'Czech Republic')
