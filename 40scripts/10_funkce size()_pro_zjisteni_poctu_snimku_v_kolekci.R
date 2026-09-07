@@ -4,7 +4,7 @@
 # počet snímků před a po filtrování lze ověřit serverovou funkcí size()
 
 # načteme balíček rgee
-xfun::pkg_attach("rgee")
+xfun::pkg_attach2("rgee")
 
 # zahájíme připojení
 ee_Initialize(

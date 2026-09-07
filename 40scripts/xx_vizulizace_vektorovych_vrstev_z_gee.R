@@ -4,7 +4,7 @@
 # v tomto případě se napřed někdy využívá vykreslení prázdného snímku, na který se pak kreslí kýžená vrstva
 
 # načteme balíček rgee
-xfun::pkg_attach("rgee")
+xfun::pkg_attach2("rgee")
 
 # zahájíme připojení
 ee_Initialize(user = "ledvinka@natur.cuni.cz")

@@ -5,7 +5,7 @@
 # tento balíček se určitě hodí ke zkoumání metadat, každopádně pro solidní analýzu GEE opjektů je stále doporučováno osvojit si nativní postupy
 
 # načteme balíček rgee a další balíčky, jejichž funkce se mohou hodit
-xfun::pkg_attach(
+xfun::pkg_attach2(
   "tidyverse", # pro apliklaci funkcí pracujících s tabulkami
   "rgee",
   "tidyrgee" # pro konverzi GEE objektů na uklizené (tabulkové) objekty
