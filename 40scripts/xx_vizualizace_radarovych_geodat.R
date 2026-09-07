@@ -13,7 +13,7 @@ xfun::pkg_attach2(
 
 # inicializujeme připojení
 ee_Initialize(
-  "ledvinka@natur.cuni.cz",
+  user = "ledvinka@natur.cuni.cz",
   # kdybychom chtěli geodata dostat na lokální disk (nebo do RAM), aktivujeme i Google Drive
   drive = T
 )
