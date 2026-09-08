@@ -17,6 +17,7 @@ col <-
   ee$ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
 
 # řekněme, že nás zajímá měsíc září 2024, kdy v Česku probíhaly velké povodně
+# časovému filtru musíme zadat začátek a konec období
 # při filtrování musíme pamatovat na to, že konečné datum musí být o jednotku větší
 # protože Python nebere rozmezí zcela tak inkluzivně
 col_zari <-
