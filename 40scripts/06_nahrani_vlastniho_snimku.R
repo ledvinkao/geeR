@@ -15,12 +15,12 @@ xfun::pkg_attach2(
 # zahájíme připojení
 ee_Initialize(
   user = "ledvinka@natur.cuni.cz",
-  gcs = T # bohužel iniciace procesu přes Google Cloud Storage (gcs) je nutností pro fungování, což nemusí jít pod každým účtem, nemá-li ověřenou kreditní nebo debetní kartu
+  gcs = T # bohužel zahájení procesu přes Google Cloud Storage (gcs) je nutností pro fungování, což nemusí jít pod každým účtem, protože je zde nutností ověřená kreditní nebo debetní karta
 )
 
 # pokud nahrajeme více snímků, které budou na sebe geometricky sedět, lze dostat ImageCollection
 # abychom nenahrávali snímky po jednom, je vhodné se zaměřit na mapování nahrávacích funkcí
-# aby ImageCollection bylo možné korektně filtrovat, je vhodné ji nastavit metadata
+# aby ImageCollection bylo možné korektně filtrovat, je vhodné ji nastavit metadata (properties)
 
 # blíže k programatickému nahrávání snímků viz
 ?raster_as_ee

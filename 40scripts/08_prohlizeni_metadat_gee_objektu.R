@@ -28,7 +28,9 @@ ee_print(img)
 vlastnosti <-
   stred$first()$propertyNames()$getInfo()
 
+# poznamenejme, že funkce first() vybírá z kolekce první záznam (snímek se všemi pásmy, nebo feature)
+
 vlastnosti
 
-# strategicky vybíráme první (zde jediný řádek), abychom dostali názvy sloupců
+# strategicky tedy vybíráme první (zde jediný řádek), abychom dostali názvy sloupců
 # tímto dostaneme vektor s názvy sloupců do prostředí R

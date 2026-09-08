@@ -1,6 +1,6 @@
 # Zjištění počtu snímků v kolekci - tidyverse přístup --------------------
 
-# těm, kteří jsou zvyklí na práci s daty ve smyslu tidyverse, může zpočátku práce s objekty GEE připadate dosti nepřirozená
+# těm, kteří jsou zvyklí na práci s daty ve smyslu tidyverse, může zpočátku práce s objekty GEE připadat dosti nepřirozená
 # abychom se přiblížili navyklým postupům, můžeme aplikovat funkce balíčku tidyrgee
 # tento balíček se určitě hodí ke zkoumání metadat, každopádně pro solidní analýzu GEE opjektů je stále doporučováno osvojit si nativní postupy
 

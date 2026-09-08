@@ -1,7 +1,7 @@
 # Odkázání se na vlastní vektorovou vrstvu -------------------------------
 
 # jakmile máme v jakémkoliv assetu nahranou vlastní vektorovou vrstvu, lze se na ni také odkázat
-# to pak umožní pracovat s ni dále i vhledem k dalším datasetům na GEE
+# to pak umožní pracovat s ní dále i vhledem k dalším datasetům na GEE
 
 # načteme balíček rgee
 xfun::pkg_attach2("rgee")
