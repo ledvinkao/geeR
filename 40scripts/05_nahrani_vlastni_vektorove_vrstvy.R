@@ -2,7 +2,7 @@
 
 # existuje možnost nahrát na GEE vlastní vektorovou vrstvu
 # lze to provést ve webovém kódovacím prostředí, ale i programaticky
-# k programatickému nahrání vlastní vrstvy potřebujeme hlavně znát cestu projektovým assetům
+# k programatickému nahrání vlastní vrstvy potřebujeme hlavně znát cestu k projektovým assetům
 # existují cloudové assety a tzv. legacy assety
 # zvolme např. cloudový asset (každý bude mít cestu podle vlastního názvu projektu)
 

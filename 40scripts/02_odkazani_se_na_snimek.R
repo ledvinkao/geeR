@@ -13,3 +13,6 @@ img <- ee$Image("MERIT/DEM/v1_0_3")
 
 # je potřeba si dávat pozor, zda se odkazujeme skutečně na daný typ - zde Image
 # můžeme jej totiž snadno zaměnit za ImageCollection (viz skript 03) a zbytek kódu nepůjde
+
+# je daný objekt skutečně Image?
+class(img)
