@@ -1,4 +1,3 @@
-
 # Tvorba vlastní vektorové vrstvy přímo v GEE ----------------------------
 
 # ve skriptu 05 jsme ukázali, jak vytvořit vektorovou vrstvu nejprve v R a pak ji nahrát na GEE
@@ -15,14 +14,14 @@ ee_Initialize(
 )
 
 # vytvoříme bod reprezentující opět astronomický střed Evropy
-# defaultne se u souřadnic předpokládá crs s EPSG kódem 4326
-pt <- 
+# defaultně se u souřadnic předpokládá crs s EPSG kódem 4326
+pt <-
   ee$Geometry$Point(15, 50)
 
 # co jsme právě dostali?
 class(pt)
 
-pt |> 
+pt |>
   ee_print()
 
 pt$getInfo()
@@ -30,7 +29,7 @@ pt$getInfo()
 # jedná se o pouhou geometrii
 # tu můžeme převést na Feature
 # které ještě můžeme dodat vlastnosti (tj. další atributy) prostřednictvím pojmenovaného seznamu
-pt2 <- 
+pt2 <-
   ee$Feature(
     pt,
     list(
@@ -41,18 +40,18 @@ pt2 <-
 
 class(pt2)
 
-pt2 |> 
+pt2 |>
   ee_print()
 
 pt2$getInfo()
 
 # nyní máme Feature, což lze převést na FeatureCollection
-pt3 <- 
+pt3 <-
   ee$FeatureCollection(pt2)
 
 class(pt3)
 
-pt3 |> 
+pt3 |>
   ee_print()
 
 pt3$first()$propertyNames()$getInfo()
