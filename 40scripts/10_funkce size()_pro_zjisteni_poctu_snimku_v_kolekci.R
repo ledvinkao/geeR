@@ -1,6 +1,6 @@
 # Zjištění počtu snímků v kolekci - klasickým způsobem -------------------
 
-# funkčnost časových filtrů se vyplatí kontrolovat
+# funkčnost časových (ale i jiných) filtrů se vyplatí kontrolovat
 # počet snímků před a po filtrování lze ověřit serverovou funkcí size()
 
 # načteme balíček rgee

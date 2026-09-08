@@ -5,7 +5,9 @@
 # ke komunikaci s GEE API je nezbytný balíček reticulate, který je určiým přemostěním mezi jazyky R a Python
 
 # načteme nejpodstatnější balíček rgee
-xfun::pkg_attach2("rgee") # pro tento způsob načítání R balíčků je nutné mít nainstalovaný balíček xfun
+# pro tento způsob načítání R balíčků je nutné mít nainstalovaný balíček xfun
+# přitom je dobré si na tento způsob navyknout právě pro případy, budeme-li balíčků před zahájením práce potřebovat více najednou
+xfun::pkg_attach2("rgee")
 
 # nyní lze zahájit připojení
 ee_Initialize(
