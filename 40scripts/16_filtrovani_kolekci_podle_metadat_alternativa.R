@@ -2,7 +2,7 @@
 
 # někomu se způsob filtrování pomocí serverové funkce filterMetadata() nemusí zamlouvat
 # existuje i alternativní způsob, kde lze využít serverovou funkci ee$Filter uzavřenou v serverové funkci filter()
-# zde se za názvem funkce pokračuje podle toho, zda potřebujeme rovnost (eq), ostrou nerovnost (gt / lt), nebo neostrou nerovnost (gte / lte)
+# zde se za názvem funkce pokračuje podle toho, zda potřebujeme rovnost (eq / neq), ostrou nerovnost (gt / lt), nebo neostrou nerovnost (gte / lte)
 # proveďme ekvivalentní filtrování k postupu uvedeném ve skriptu 15
 
 # načteme balíček rgee
