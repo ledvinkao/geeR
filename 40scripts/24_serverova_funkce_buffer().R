@@ -21,3 +21,7 @@ pt_buf <-
   pt$buffer(30000)
 
 # jinak číslo v závorkách může být i záporné, což má význam u polygonů
+
+# je nový objekt polygon?
+pt_buf |>
+  ee_print()
