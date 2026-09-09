@@ -23,7 +23,7 @@ col2 <-
   col$filterDate("2022-07-01", "2026-08-01")$filterBounds(ee$Geometry$Point(
     15,
     50
-  ))$filter(ee$Filter$calendarRange(7, 7, "month"))
+  ))$filter(ee$Filter$calendarRange(7, 7, "month")) # číslem specifikujeme konkrétní měsíc a textově se odkážeme na období
 
 # podmínky splňuje 150 snímků
 # jak se mmůžeme snadno přesvědčit následujícím způsobem
