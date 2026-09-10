@@ -24,15 +24,18 @@ ee_Initialize(
 # duvodem je zaměření se na snímky poblíž Krnovska, které bylo povodní velmi zasaženo
 col <- 
   ee$ImageCollection("COPERNICUS/S2_SR_HARMONIZED")$
-  filterDate("2024-09-01", "2024-10-01")$
   filterBounds(ee$Geometry$Point(17.8276967, 50.1168703)$buffer(30000))$
-  filter(ee$Filter$lt("CLOUDY_PIXEL_PERCENTAGE", 10))
+  filter(ee$Filter$lt("CLOUDY_PIXEL_PERCENTAGE", 10))$
+  filterDate("2024-09-01", "2024-10-01")
 
 # prohlédneme kolekci jako uklizený objekt, ať máme lepší povědomí o datumech
 meta <- tidyrgee::as_tidyee(col)
 
-# klidně si ještě odhnízdíme sloupec 'band_names', ať vidíme označení pásem
 # musíme se dostat do tabulky v seznamu s názvem 'vrt'
+meta |> 
+  pluck("vrt")
+
+# klidně si ještě odhnízdíme sloupec 'band_names', ať vidíme označení pásem
 meta |> 
   pluck("vrt") |> 
   unnest(band_names)
@@ -40,10 +43,8 @@ meta |>
 # vidíme, že v omezené kolekci je hned několik dnů na výběr
 # podívejme se např. na 18. září a všechny dostupné dlaždice mozaikujme
 img <- 
-  col <- 
-  ee$ImageCollection("COPERNICUS/S2_SR_HARMONIZED")$
+  col$
   filterDate("2024-09-18", "2026-09-19")$
-  filterBounds(ee$Geometry$Point(17.8276967, 50.1168703)$buffer(30000))$
   mosaic()
 
 # nyní můžeme pro takto vzniklý snímek aplikovat výpočet NDVI
@@ -56,6 +57,8 @@ ndvi <- img$normalizedDifference(list("B8", "B4"))
 # před kreslením centrujeme na bod zájmu a použijeme např. úroveň zoomu 11
 Map$centerObject(ee$Geometry$Point(17.8276967, 50.1168703), 11)
 
+# místo funkce Map$centerObject() lze použít také funkci Map$setCenter(), která akceptuje souřadnice místo geometrického objektu
+
 # a kreslíme (díky možnostem R balíčku balíčku mapview lze takto dynamicky)
 # speciálně se ve funkci Map$addLayer() musíme postarat o správnou paletu barev
 # vektor hexadecimálních kódů barev např. dostaneme od AI:-)
@@ -67,5 +70,5 @@ Map$addLayer(
       max = 1,
       palette = c("#8c510a", "#d8b365", "#f6e8c3", "#c7eaea", "#80cdc1", "#01665e")
     ),
-    'NDVI'
+    "NDVI"
   )
