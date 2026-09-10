@@ -13,6 +13,7 @@ xfun::pkg_attach2(
 )
 
 # zahájíme připojení
+# každý bude mít svůj uživatelský účet
 ee_Initialize(
   user = "ledvinka@natur.cuni.cz",
   drive = T # to jen, pokud očekáváme, že transfer výsledků půjde přes Google Drive
